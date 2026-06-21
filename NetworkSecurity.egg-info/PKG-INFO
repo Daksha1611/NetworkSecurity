@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: NetworkSecurity
+Version: 0.1
+Author: Daksh Mehta
+Author-email: dakshmehta@example.com
+Requires-Dist: python-dotenv
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pymongo
+Requires-Dist: certifi
+Requires-Dist: pymongo[srv]
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
