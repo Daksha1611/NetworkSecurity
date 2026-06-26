@@ -16,6 +16,7 @@ def read_yaml_file(file_path: str) -> dict:
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
  
+ 
     
 def write_yaml_file(file_path: str, content: object, replace: bool = False) -> None:
     try:
@@ -42,6 +43,7 @@ def save_numpy_array_data(file_path: str, array: np.array):
             np.save(file_obj, array)
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
+
  
     
 def save_object(file_path: str, obj: object) -> None:
@@ -54,6 +56,7 @@ def save_object(file_path: str, obj: object) -> None:
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
  
+ 
     
 def load_object(file_path: str, ) -> object:
     try:
@@ -64,6 +67,7 @@ def load_object(file_path: str, ) -> object:
             return pickle.load(file_obj)
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
+ 
  
     
 def load_numpy_array_data(file_path: str) -> np.array:
